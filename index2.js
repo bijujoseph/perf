@@ -22,6 +22,7 @@ let l5 = microtime.now();
 list.filter(even).filter(even).filter(even).map(add);
 let l6 = microtime.now();
 
+console.log("***** All results in Micro Second *****");
 console.log("Time for lodash map: ", (l2 - l1));
 console.log("Time for navive map: ", (l3 - l2));
 console.log("Time for filer and map: ", (l4 - l3));
