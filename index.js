@@ -9,7 +9,7 @@ for (var i = 0; i<200; i++) {
 
 var add = function(element){return element + 1;};
 var even = function(element) {return element % 2 == 0;};
-var evenAdd = function(element){ element %2 == 0 ? element + 1: element; };
+var evenAdd = function(element){ return element %2 == 0 ? element + 1: element; };
 
 
 // add tests
