@@ -11,6 +11,16 @@ var validator1 = (s, p, b) => {return [s,p,b]};
 var list1 = [[submission, provider, benchmarks]];
 var list2 = [submission, provider, benchmarks];
 
+//let us warm run it first
+pipe(
+    input => deforster1(...input),
+    input => validator1(...input)
+)(list2);
+list1
+    .map(input => deforster1(...input))
+    .map(input => validator1(...input));
+
+//real benchmarking start now.
 let l1 = microtime.now();
 
 pipe(
