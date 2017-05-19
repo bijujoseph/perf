@@ -8,7 +8,7 @@ for (var i = 0; i<200; i++) {
 
 var add = function(element){return element + 1;};
 var even = function(element) {return element % 2 == 0;};
-var evenAdd = function(element){ element %2 == 0 ? element + 1: element; };
+var evenAdd = function(element){ return element %2 == 0 ? element + 1: element; };
 
 let l1 = microtime.now();
 _.map(list, add);
@@ -22,6 +22,7 @@ let l5 = microtime.now();
 list.filter(even).filter(even).filter(even).map(add);
 let l6 = microtime.now();
 
+console.log("***** All results in Micro Second *****");
 console.log("Time for lodash map: ", (l2 - l1));
 console.log("Time for navive map: ", (l3 - l2));
 console.log("Time for filer and map: ", (l4 - l3));
