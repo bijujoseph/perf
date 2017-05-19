@@ -11,6 +11,7 @@
   "dependencies": {
     "benchmark": "^2.1.4",
     "lodash": "^4.17.4",
+    "lodash.flow": "^3.5.0",
     "microtime": "^2.1.3"
   }
 }
